@@ -1,3 +1,3 @@
 export const wizard = {
-  power: "fire",
+  power: "Fire",
 };
