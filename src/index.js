@@ -1,4 +1,4 @@
 import { wizard } from "./components/wizard";
-import "./index.css";
+import "./index.scss";
 
 console.log(wizard);
