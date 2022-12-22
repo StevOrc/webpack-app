@@ -1,4 +1,4 @@
-import Person from "./Person";
+import { wizard } from "./components/wizard";
+import "./index.css";
 
-const steven = new Person(36, "geks");
-console.log(steven);
+console.log(wizard);
