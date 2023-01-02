@@ -1,18 +1,16 @@
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: "./src/index.js",
-  output: {
-    filename: "main.[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
-  },
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader", // 3. Inject styles into DOM
+          "css-loader", // 2. Turns css into commonjs
+          "sass-loader", // 1. Turn sass into css
+        ],
       },
     ],
   },
